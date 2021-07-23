@@ -37,11 +37,25 @@ body {
     min-height: 100vh;
 }
 
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 90%;
+        min-height: initial;
+        margin: 5.8rem auto;
+    }
+}
+
 /* Columns styling */
 .features-columns {
     display: flex;
     overflow: hidden;
     border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 375px) {
+    .features-columns {
+        flex-flow: column;
+    }
 }
 
 .features-columns__item {
@@ -85,6 +99,12 @@ body {
     color: var(--transparent-white);
     line-height: 1.7;
     margin-bottom: 5.8rem;
+}
+
+@media screen and (max-width: 375px) {
+    .features-columns__description {
+        margin-bottom: 3rem;
+    }
 }
 
 .features-columns__cta {
