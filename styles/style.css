@@ -1,0 +1,96 @@
+/* Fonts */
+/* 
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+/* Variables */
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --light-color: #f2f2f2;
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+/* Utils */
+.sr-only {
+    visibility: hidden;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styling */
+body {
+    background-color: var(--light-color);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Columns styling */
+.features-columns {
+    display: flex;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.features-columns__item {
+    flex: 1 1 33.3%;
+    padding: 3rem 3rem 4rem;
+}
+
+.features-columns__item--orange {
+    background-color: var(--bright-orange);
+}
+
+.features-columns__item--orange .features-columns__cta {
+    color: var(--bright-orange);
+}
+
+.features-columns__item--cyan {
+    background-color: var(--dark-cyan);
+}
+
+.features-columns__item--cyan .features-columns__cta {
+    color: var(--dark-cyan);
+}
+
+.features-columns__item--dark-cyan {
+    background-color: var(--very-dark-cyan);
+}
+
+.features-columns__item--dark-cyan .features-columns__cta {
+    color: var(--very-dark-cyan);
+}
+
+.features-columns__title {
+    font-family: "Big Shoulders Display", cursive;
+    text-transform: uppercase;
+    font-size: 2.46rem;
+    margin: 2rem 0 1.55rem;
+    color: var(--very-light-gray);
+}
+
+.features-columns__description {
+    color: var(--transparent-white);
+    line-height: 1.7;
+    margin-bottom: 5.8rem;
+}
+
+.features-columns__cta {
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: var(--light-color);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
